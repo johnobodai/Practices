@@ -12,6 +12,7 @@ phoneRegex = re.compile(r'''(
     (\s*(ext|x|ext.)\s(\d{2,5}))?   # extension
     )''',re.VERBOSE)
 
-# TODO: Create email regex.
+# Create email regex.
+
 # TODO: Find matchess in clipboard text.
 # TODO: Copy results to the clipboard
