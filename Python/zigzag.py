@@ -8,7 +8,7 @@ indentIncreasing = True # Whether the indentation is increasing or not.
 try:
     while True: # The main program loop.
         print(' ' * indent, end='')
-        print('**************')
+        print('***************************')
         time.sleep(0.1) # Pause for 1/10 of a sec.
 
         if indentIncreasing:
