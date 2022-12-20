@@ -1,6 +1,6 @@
 #/usr/bin/python3
 
-# an annoying while loop
+# an annoying while loop that continues till you type 'your name'
 
 name = ''
 while name != 'your name':
