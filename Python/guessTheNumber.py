@@ -2,7 +2,7 @@
  
 # This is guess the number game.
 import random
-secretNumber = random.randit(1, 20)
+secretNumber = random.randint(1, 20)
 print('I am thinking of a number between 1 and 20.')
 
 # Ast the player to guess 6 times.
