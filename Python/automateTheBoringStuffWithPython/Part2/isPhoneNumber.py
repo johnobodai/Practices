@@ -25,6 +25,8 @@ print(isPhoneNumber('Moshi moshi'))
 
 
 """
+This is anothe method that uses regex to produce \
+        the same output.
 import re
 phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d')
 mo = phoneNumRegex.search('My number is 415-555-4242.')
