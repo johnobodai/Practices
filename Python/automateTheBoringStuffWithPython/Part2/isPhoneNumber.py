@@ -17,3 +17,8 @@ def isPhoneNumber(text):
         if not text[i].isdecimal():
             return False
     return True
+
+print('Is 413-555-4242 a phone number?')
+print(isPhoneNumber('413-555-4242'))
+print('Is Moshi moshi a phone number?')
+print(isPhoneNumber('Moshi moshi'))
