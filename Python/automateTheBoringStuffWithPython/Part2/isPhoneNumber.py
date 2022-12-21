@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def isPhoneNumber(text):
-    if lent(text) != 12:
+    if len(text) != 12:
         return False
     for i in range(0, 3):
         if not text[i].isdecimal():
