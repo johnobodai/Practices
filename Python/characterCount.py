@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# Counts the number of individual characters in a string inputed my a user:
+
 
 message = input('Input your string to be counted here: ')
 count = {}
