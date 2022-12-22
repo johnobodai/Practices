@@ -37,5 +37,5 @@ if len(matches) > 0:
     pyperclip.copy('\n'.join(matches))
     print('Copied to clipboard:')
     print('\n'.join(matches))
-else:
+else:sd
     print('No phone numbers or email addresses found.')
