@@ -11,3 +11,10 @@ for questionNumber in range(numberOfQuestions):
 
     prompt = '#{}: {} x {}.'.format(questionNumber, num1, num2)
 
+    try:
+        # Right answers are handled by allowRegexes.
+        # Wrong answers are handled by blockRegexes, with a custom message.
+        pyip.inputStr(prompt, allowRegexes=['^%s$' % (num1 * num2)],
+                              blockRegexes=[('.*', 'Incorrect!')],
+                              timeout=8, limit=3)
+
