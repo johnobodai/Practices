@@ -31,4 +31,5 @@ for groups om phoneRegex.findall(text):
     matches.append(phoneNum)
 for groups in emailRegex.findall(text):
     matches.append(groups[0])
+
 # TODO: Copy results to the clipboard
