@@ -40,7 +40,7 @@ for questionNum in range(50):
     # Get right and wrong answers.
     correctAnswer = capitals[states[questionNum]]
     wrongAnswers = list(capitals.values())
-    del wrongAnswers[wrongAnwers.index(correctAnswer)]
+    del wrongAnswers[wrongAnswers.index(correctAnswer)]
     wrongAnswers = random.sameple(wrongAnswers, 3)
     answerOptions = wrongAnswers + [correctAnswer]
     random.shuffle(answerOptions)
