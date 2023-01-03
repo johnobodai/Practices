@@ -13,14 +13,12 @@ capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
 'Augusta', 'Maryland': 'Annapolis', 'Massachusetts': 'Boston', 'Michigan':
 'Lansing', 'Minnesota': 'Saint Paul', 'Mississippi': 'Jackson', 'Missouri':
 'Jefferson City', 'Montana': 'Helena', 'Nebraska': 'Lincoln', 'Nevada':
-'Carson City', 'New Hampshire': 'Concord', 'New Jersey': 'Trenton', 'New
-Mexico': 'Santa Fe', 'New York': 'Albany',
+'Carson City', 'New Hampshire': 'Concord', 'New Jersey': 'Trenton', 'New Mexico': 'Santa Fe', 'New York': 'Albany',
 'North Carolina': 'Raleigh', 'North Dakota': 'Bismarck', 'Ohio': 'Columbus', 'Oklahoma': 'Oklahoma City',
 'Oregon': 'Salem', 'Pennsylvania': 'Harrisburg', 'Rhode Island': 'Providence',
 'South Carolina': 'Columbia', 'South Dakota': 'Pierre', 'Tennessee':
 'Nashville', 'Texas': 'Austin', 'Utah': 'Salt Lake City', 'Vermont':
-'Montpelier', 'Virginia': 'Richmond', 'Washington': 'Olympia', 'West
-Virginia': 'Charleston', 'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne'}
+'Montpelier', 'Virginia': 'Richmond', 'Washington': 'Olympia', 'West Virginia': 'Charleston', 'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne'}
 
 # Generate 35 quiz files.
 for quizNum in range(35):
@@ -48,14 +46,12 @@ for questionNum in range(50):
     random.shuffle(answerOptions)
     
     # Write the question and the answer options to the quiz file.
-    quizFile.write(f'{quetionNum + 1}. What is the capital of
-    {states[quetionNum]}?\n')
+    quizFile.write(f'{quetionNum + 1}. What is the capital of{states[quetionNum]}?\n')
     for i in range(4):
         quizFile.write(f"  {'ABCD'[i]}. { answerOptions[i]}\n"
         quizFile.write('\n'))
 
         # Write the answer key to a file.
-        answerKeyFile.write(f"{quetionNum + 1}.
-        {'ABCD'[answerOptions.index(correctAnswer)]}")
+        answerKeyFile.write(f"{quetionNum + 1}.{'ABCD'[answerOptions.index(correctAnswer)]}")
         quizFile.close()
         answerKeyFile.close()
