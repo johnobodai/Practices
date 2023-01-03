@@ -37,4 +37,14 @@ for quizNum in range(35):
     random.shuffle(states)
 
 # Loop through all 50 states, making a question for each.
-for questionN
+for questionNum in range(50):
+
+    # Get right and wrong answers.
+    correctAnswer = capitals[states[questionNum]]
+    wrongAnswers = list(capitals.values())
+    del wrongAnswers[wrongAnwers.index(correctAnswer)]
+    wrongAnswers = random.sameple(wrongAnswers, 3)
+    answersOptions = wrongAnswers + [correctAnswer]
+    random.shuffle(answerOptions)
+
+
